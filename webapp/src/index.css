@@ -1,0 +1,184 @@
+@keyframes fade-up{
+  0%{
+    opacity: 0;
+    transform: translateY(-30px) scale(0,9);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+  
+}
+
+@keyframes fade-down{
+  0%{
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+  }
+}
+
+@keyframes cursor{
+  50% {border-color: transparent}
+}
+
+@keyframes typing{
+  from{width: 0}
+}
+
+
+
+body{
+  margin: 0;
+}
+
+
+.navBar{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #712CF9;
+  margin: 0;
+  padding: 1.5rem;
+  
+  
+}
+
+.navBar button{
+  background-color: #712CF9;
+  border: none;
+  font-family: 'Courier New', Courier, monospace;
+  color: aliceblue;
+  font-size: 20px;
+}
+/*Main*/
+
+.whoAm{
+  background-color: #282A36;
+  padding: 9rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+  color: aliceblue;
+  display: flex; 
+  align-items: center;
+}
+
+.whoAm p{
+  font-size: 15px;
+  margin-top: 0px;
+  animation: fade-up 1.4s;
+  
+}
+
+.whoAm img{
+  width: 180px; 
+  height: 180px;
+  border: 1px solid white;
+  border-radius: 100px 100px 100px 100px;
+}
+
+.whoAm h1{
+  margin-top: 1px;
+  margin: 0;
+  animation: fade-up 1.4s;
+}
+
+.sectionBox {
+  background-color: #712CF9;
+  padding: 10rem;
+  text-align: center;
+}
+
+.sectionBox h2{
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin: 0;
+  color: white;
+  font-size: 25px;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 7s ,
+             cursor .4s step-end infinite alternate
+}
+
+.sectionBox p{
+  margin-top: 0;
+  position: relative;
+  top: 40%;
+  transform: (-50%,-50%);
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+}
+
+.skillsLi{
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  justify-content: space-around;
+  font-size: 25px;
+}
+
+.sectionBox h3{
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+  padding: 50px;
+}
+
+.curriculumSection{
+  background-color: #282A36;
+  padding: 6.5rem;
+}
+
+/*FOOTER*/
+
+.footerBox{
+  background-color: #282A36;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+}
+
+/*SECTION CONTATTI*/
+
+.cvButton{
+  color: white;
+  background-color: #712CF9;
+  padding: 0.6rem;
+  border: 1px solid #712CF9;
+  border-radius: 20px 20px 20px 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contactSec{
+  padding: 5rem;
+  background-color: #282A36;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10em;
+}
+
+.contactSec a{
+  text-decoration: none;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+}
+
+.svgDim{
+  width: 140px;
+  display: flex;
+  justify-content: center;
+}
+
+.newSvgDim{
+  width: 137px;
+  display: flex;
+  gap: 2;
+}
